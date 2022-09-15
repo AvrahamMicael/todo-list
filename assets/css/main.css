@@ -27,7 +27,7 @@ input
 {
     outline: none;
     margin: 20px 0;
-    background-color: rgb(38, 35, 54);
+    background-color: transparent;
     border: none;
     border-bottom: 1px solid greenyellow;
     color: white;
