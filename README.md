@@ -1,5 +1,7 @@
 # todo-list
 
+Live link: [avrahammicael.github.io/todo-list](https://avrahammicael.github.io/todo-list/).
+
 ## Build Setup
 
 ```bash
