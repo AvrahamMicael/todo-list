@@ -1,0 +1,140 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(38, 35, 54);
+    color: white;
+    overflow-x: hidden;
+}
+
+p
+{
+    font-size: 24px;
+}
+
+h1
+{
+    margin-top: 10vh;
+    font-size: 70px;
+}
+
+input
+{
+    outline: none;
+    margin: 20px 0;
+    background-color: rgb(38, 35, 54);
+    border: none;
+    border-bottom: 1px solid greenyellow;
+    color: white;
+}
+
+.tasks
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.task
+{
+    text-align: start;
+    background-color: rgba(52, 47, 78, .8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 800px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    section.task
+    {
+        width: 100vw;
+    }
+}
+
+section.task button
+{
+    font-weight: 900;
+}
+
+section.task.done
+{
+    opacity: .7;
+}
+
+section.task.done button.btn-success
+{
+    color: black;
+}
+
+section.task.done span:first-child
+{
+    text-decoration: line-through;
+}
+
+
+.bounce-enter-active
+{
+    animation: bounce-in 0.5s;
+}
+.bounce-leave-active
+{
+    animation: bounce-in 0.5s reverse;
+}
+@keyframes bounce-in
+{
+    0%
+    {
+        transform: scale(0);
+    }
+    50%
+    {
+        transform: scale(1.25);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+
+
+
+i
+{
+    position: fixed;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow:
+        0 0 10px white,
+        0 0 20px white,
+        0 0 40px white,
+        0 0 80px white;
+    animation: twinkle linear infinite;
+    z-index: -1;
+}
+
+@keyframes twinkle
+{
+    0%
+    {
+        opacity: 0;
+    }
+    10%
+    {
+        opacity: 1;
+    }
+    90%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
